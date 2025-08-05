@@ -51,7 +51,7 @@ void DeleteRobloxFolder() {
 }
 
 bool DownloadInstaller(const std::wstring& dest) {
-    std::wstring url = L"https://www.roblox.com/download/client?os=win";
+    std::wstring url = L"https://setup.rbxcdn.com/RobloxPlayerInstaller.exe";
     std::wcout << L"Downloading Roblox installer...\n";
 
     HRESULT hr = URLDownloadToFile(NULL, url.c_str(), dest.c_str(), 0, NULL);
